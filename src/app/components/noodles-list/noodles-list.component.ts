@@ -9,15 +9,13 @@ import { NoodlesService } from 'src/app/services/noodles.service';
 })
 export class NoodlesListComponent implements OnInit {
 
-  noodles$: Observable<any>;
-  
+  restarents$: Observable<any>;  
   constructor(private _noodleService: NoodlesService) { }
 
 
   ngOnInit(): void {
-    this.noodles$ = this._noodleService.getAllNoodleStores();
+    this.restarents$ = this._noodleService.getAllNoodleStores();
   }
-
 
 
 }

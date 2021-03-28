@@ -9,12 +9,14 @@ import { MaterialModule } from './material.module';
 import { NoodlesListComponent } from './components/noodles-list/noodles-list.component';
 import { NoodlesService } from './services/noodles.service';
 import { HttpClientModule } from '@angular/common/http';
+import { RestarentDetailComponent } from './components/restarent-detail/restarent-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    NoodlesListComponent
+    NoodlesListComponent,
+    RestarentDetailComponent
   ],
   imports: [
     BrowserModule,
